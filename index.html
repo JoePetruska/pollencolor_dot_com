@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Pollen Colors</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="honeycomb">
+  <div class="ibws-fix">
+
+<script>
+const pollens = [
+ {
+   "name": "Alfalfa",
+   "color_hex": "#F0E68D",
+   "color_hex_2": "",
+   "usda": "All",
+   "season": ""
+ },
+ {
+   "name": "Almond",
+   "color_hex": "#A0312A",
+   "color_hex_2": "",
+   "usda": "4 - 8",
+   "season": ""
+ },
+ {
+   "name": "Apple",
+   "color_hex": "#F68815",
+   "color_hex_2": "",
+   "usda": "3 - 6",
+   "season": ""
+ },
+ {
+   "name": "Ash",
+   "color_hex": "#8C5E1F",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Asparagus",
+   "color_hex": "#FA5517",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Aster",
+   "color_hex": "#FFCC34",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Balsam",
+   "color_hex": "#E4D59E",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Basil",
+   "color_hex": "#FFFEFE",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Bell Heath",
+   "color_hex": "#A8B264",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Berberis",
+   "color_hex": "#78611E",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Bindweed",
+   "color_hex": "#EDDEA0",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Birds-Foot Trefoil",
+   "color_hex": "#C6880B",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Blackberry",
+   "color_hex": "#A89645",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Blackthorn",
+   "color_hex": "#A02D26",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Blue Crocus",
+   "color_hex": "#FEA00B",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Blueberry",
+   "color_hex": "#FE9835",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Borage",
+   "color_hex": "#E5AA54",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Box",
+   "color_hex": "#FAC403",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Broadbean",
+   "color_hex": "#797E55",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Broccoli",
+   "color_hex": "#E0C03E",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Broom",
+   "color_hex": "#C5542D",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Buckwheat",
+   "color_hex": "#CDFE9A",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Bugle",
+   "color_hex": "#ECCF6C",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Buttercup",
+   "color_hex": "#ED7715",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Cabbage",
+   "color_hex": "#F68815",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Californian Poppy",
+   "color_hex": "#F89806",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Charlock",
+   "color_hex": "#D8C75B",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Chicory",
+   "color_hex": "#FFFEFE",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Clematis",
+   "color_hex": "#9A9433",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Coltsfoot",
+   "color_hex": "#E3B369",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Common Beech",
+   "color_hex": "#E3CA2B",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Common Lime",
+   "color_hex": "#F07719",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Common Mallow",
+   "color_hex": "#EA3EE8",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Copper beech ",
+   "color_hex": "#C85231",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Cowslip",
+   "color_hex": "#ECD16C",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Crab Apple",
+   "color_hex": "#777638",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Cucumber",
+   "color_hex": "#FFFE32",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Dahlia",
+   "color_hex": "#ECCF6C",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Daisy",
+   "color_hex": "#FFD17A",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Dandelion",
+   "color_hex": "#F75624",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Deadly Nightshade",
+   "color_hex": "#ABA436",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Dogwood",
+   "color_hex": "#FAC403",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Elder",
+   "color_hex": "#E0C03E",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Elder ",
+   "color_hex": "#CBD0D0",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Elm",
+   "color_hex": "#83644A",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Evening Primrose",
+   "color_hex": "#DFCB2A",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Evening Primrose",
+   "color_hex": "#E4CF23",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "False Acacia",
+   "color_hex": "#594518",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Field Bean",
+   "color_hex": "#935D1F",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Field Scabious",
+   "color_hex": "#FA4F4A",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Field Scabious",
+   "color_hex": "#F95640",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Field Thistle",
+   "color_hex": "#D6D57F",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Fireweed",
+   "color_hex": "#0100FF",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Flowering Currant",
+   "color_hex": "#AC8143",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Fuchsia",
+   "color_hex": "#FEFECD",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Gooseberry",
+   "color_hex": "#60431F",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Gorse",
+   "color_hex": "#B74C3C",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Hairy Willowherb",
+   "color_hex": "#E4C839",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Hawthorne",
+   "color_hex": "#AF9E28",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Hazel",
+   "color_hex": "#CBD0D0",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Himalayan Balsam",
+   "color_hex": "#E9D9A4",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Hogweed",
+   "color_hex": "#F7C615",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Holly",
+   "color_hex": "#867F28",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Ivy",
+   "color_hex": "#FDA520",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Jewelweed",
+   "color_hex": "#FEFFE0",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Joe Pye weed",
+   "color_hex": "#3E2C20",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Knapweed",
+   "color_hex": "#E5AA54",
+   "color_hex_2": "#CDFE9A",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Laurel",
+   "color_hex": "#E0C03E",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Lauristus",
+   "color_hex": "#9B7F21",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Lilac",
+   "color_hex": "#E3CA2B",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Lilac",
+   "color_hex": "#DAAC49",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Ling Heather",
+   "color_hex": "#C4884E",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Lupin",
+   "color_hex": "#6B2C20",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Marjoram",
+   "color_hex": "#9D6F37",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Meadowsweet",
+   "color_hex": "#7A8A31",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Mellon",
+   "color_hex": "#FEFF35",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Mount Ash",
+   "color_hex": "#867F28",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Mustard",
+   "color_hex": "#ED7715",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Oak",
+   "color_hex": "#AF9E28",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Oil Seed Rape",
+   "color_hex": "#F4C600",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Onion",
+   "color_hex": "#D0AC29",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Oriental Poppy",
+   "color_hex": "#1C1D1C",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Pear",
+   "color_hex": "#777638",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Phacelia",
+   "color_hex": "#343399",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Plantain",
+   "color_hex": "#E4BA24",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Plantain",
+   "color_hex": "#E0C03E",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Plum",
+   "color_hex": "#CD4D1E",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Poplar",
+   "color_hex": "#F8810E",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Privet",
+   "color_hex": "#E2CA09",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Pumpkin",
+   "color_hex": "#FFFF02",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Ragwort",
+   "color_hex": "#FFDE0F",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Raspberry",
+   "color_hex": "#ADA589",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Red / White Clover",
+   "color_hex": "#4B351F",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Red Dead Nettle",
+   "color_hex": "#781B23",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Red Horse Chestnut",
+   "color_hex": "#3B2724",
+   "color_hex_2": "#4F3126",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Rockrose",
+   "color_hex": "#F03F18",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Rosebay Willow Herb",
+   "color_hex": "#044A39",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Sainfoin",
+   "color_hex": "#FFCD34",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Shedherds Purse",
+   "color_hex": "#FBEE74",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Siberian Squil",
+   "color_hex": "#326699",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Snowdrop",
+   "color_hex": "#F6461D",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Snowdrop",
+   "color_hex": "#F84623",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Sweet Chestnut",
+   "color_hex": "#E7B307",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Sycamore ",
+   "color_hex": "#8C5E1F",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Toadflax",
+   "color_hex": "#BC9F27",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Travelers Joy",
+   "color_hex": "#9F9734",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Vipers Bugloss",
+   "color_hex": "#1E2D34",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Virginia Creepe",
+   "color_hex": "#E9B402",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Wallflower",
+   "color_hex": "#BF8028",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "White Horse Chestnut",
+   "color_hex": "#5C2123",
+   "color_hex_2": "#5B2824",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Wild Bluebell",
+   "color_hex": "#E4BA24",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Wild Cherry",
+   "color_hex": "#CD4D1E",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Wild Honeysuckle",
+   "color_hex": "#EBC750",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Wild Honeysuckle",
+   "color_hex": "#ABA436",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Willow",
+   "color_hex": "#F08F15",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Winter Aconite",
+   "color_hex": "#FEFE01",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Winter Heath",
+   "color_hex": "#9C653E",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "yellow Crocus",
+   "color_hex": "#F68D18",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ },
+ {
+   "name": "Yew",
+   "color_hex": "#DC7135",
+   "color_hex_2": "",
+   "usda": "",
+   "season": ""
+ }
+];
+const pollen = JSON.parse(JSON.stringify(pollens));
+
+let x = 0;
+
+function myFunction() {
+  alert("I am an alert box! '"+ pollen[0].name +"'" );
+}
+
+
+for (i = 0; i < 199; i++) {
+	numerate = x++;
+
+    var comb = document.createElement('a');
+    comb.id = numerate;
+		comb.className = "hexagon";
+		comb.setAttribute('style', 'background-color:' + pollen[numerate].color_hex +'');
+		comb.setAttribute('title',  '' + pollen[numerate].name + '');
+		comb.setAttribute('href',  '#portfolioModal1');
+		comb.setAttribute('data-toggle',  'modal');
+		comb.setAttribute('onclick',  'confirm("Name '+ pollen[numerate].name +'" )');
+    comb.innerHTML = ('<div title="' + pollen[numerate].name +'&#013; Zone ' + pollen[numerate].usda + '"> <div class="hexagontent">' + pollen[numerate].name +'</div></div>');
+    
+	
+	document.body.appendChild(comb);
+	   
+};
+</script>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
